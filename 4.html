@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page 2</title>
+
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .maincardsaib {
+        width: 100%;
+        height: auto;
+        /* padding: 50px; */
+        padding-inline: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .card-cards {
+        width: 240px;
+        height: 440px;
+        border: 1px solid black;
+        padding-inline: 25px;
+        margin-top: 50px;
+        /* background-color: red; */
+    }
+
+    .card-cards img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-cards h1 {
+        font-size: 13px;
+    }
+
+    .card-cards p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="maincardsaib" id="HiRiya"></div>
+</body>
+<script>
+
+    // let mainBox = document.getElementById("mainBox")
+    // let card = document.createElement("div")
+
+    function card() {
+        let mainBox = document.getElementById("HiRiya")
+        let card = document.createElement("div")
+        card.setAttribute("class", "card-cards")
+        let cardImg = document.createElement("img")
+        cardImg.setAttribute("src", "https://mtechmart.com/images/thumbs/004/0042600_boat-wave-electra-smart-watch-with-181-hd-display-smart-calling-with-ultra-seamless-bt-calling-chip2_510.jpeg")
+        let cardTitle = document.createElement("h1")
+        cardTitle.innerText = "Teri Nazro Main Tere Sapne Tere Sapno Main Narazi Tujhe Lagta Hai Ki Bate Dil Ki Hoti Lvzo Ki Dhokebazi"
+        let cardDetail = document.createElement("p")
+        cardDetail.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione molestias expedita voluptatibus rem excepturi modi veritatis qui deleniti. Deserunt quia eum vero earum beatae, eaque officia consequuntur pariatur consectetur!"
+        let cardButton = document.createElement("button")
+
+        console.log(HiRiya)
+        // console.log(img)
+        card.append(cardImg)
+        card.append(cardTitle)
+        card.append(cardDetail)
+        card.append(cardButton)
+        mainBox.append(card)
+    }
+
+    for (let i = 1; i <= 100000; i++) 
+    {
+        card()
+    }
+
+
+</script>
+
+</html>
